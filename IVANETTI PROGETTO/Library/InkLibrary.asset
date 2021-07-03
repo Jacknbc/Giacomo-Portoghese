@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc234ab28a32840f5adfb84a075bc023, type: 3}
+  m_Name: Ink Library 1.0.0
+  m_EditorClassIdentifier: 
+  inkLibrary:
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 1460e815e969b43b8a83a7caa8b48c27, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
+    unhandledCompileErrors: []
+    errors: []
+    warnings: []
+    todos: []
+    parents: []
+    masterInkAssets: []
+    masterInkAsset: {fileID: 0}
+    includePaths: []
+    includes: []
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 9c0a16a598a61c149993c872b03128a8, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 0d15f87462d0fb44b952e27ebf976437, type: 3}
+    unhandledCompileErrors: []
+    errors: []
+    warnings: []
+    todos: []
+    parents: []
+    masterInkAssets: []
+    masterInkAsset: {fileID: 0}
+    includePaths: []
+    includes: []
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 5cb06863009ddfa4abb82b690e543bb7, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: c3328f7d7226c494193ed6186b3dd2d7, type: 3}
+    unhandledCompileErrors:
+    - "Ink Compiler threw exception \nError: Destination array was not long enough.
+      Check destIndex and length, and the array's lower bounds\n---- Trace ----\n 
+      at System.Array.Copy (System.Array sourceArray, System.Int32 sourceIndex, System.Array
+      destinationArray, System.Int32 destinationIndex, System.Int32 length) [0x000da]
+      in <eae584ce26bc40229c1b1aa476bfa589>:0 \n  at System.Collections.Generic.HashSet`1[T].SetCapacity
+      (System.Int32 newSize) [0x0000f] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \n 
+      at System.Collections.Generic.HashSet`1[T].IncreaseCapacity () [0x00020] in
+      <351e49e2a5bf4fd6beabb458ce2255f3>:0 \n  at System.Collections.Generic.HashSet`1[T].AddIfNotPresent
+      (T value) [0x000b3] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \n  at System.Collections.Generic.HashSet`1[T].Add
+      (T item) [0x00000] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \n  at Ink.CharacterRange.ToCharacterSet
+      () [0x00032] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/CharacterRange.cs:32
+      \n  at Ink.InkParser.ExtendIdentifierCharacterRanges (Ink.CharacterSet identifierCharSet)
+      [0x00013] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/InkParser/InkParser_CharacterRanges.cs:36
+      \n  at Ink.InkParser.get_identifierCharSet () [0x00040] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI
+      PROGETTO/Assets/Ink/InkLibs/InkCompiler/InkParser/InkParser_Logic.cs:412 \n 
+      at Ink.InkParser.Identifier () [0x00001] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI
+      PROGETTO/Assets/Ink/InkLibs/InkCompiler/InkParser/InkParser_Logic.cs:384 \n 
+      at Ink.InkParser.IdentifierWithMetadata () [0x00001] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI
+      PROGETTO/Assets/Ink/InkLibs/InkCompiler/InkParser/InkParser_Logic.cs:372 \n 
+      at Ink.StringParser.Parse[T] (Ink.StringParser+SpecificParseRule`1[T] rule)
+      [0x00008] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:267
+      \n  at Ink.InkParser.AuthorWarning () [0x00008] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI
+      PROGETTO/Assets/Ink/InkLibs/InkCompiler/InkParser/InkParser_AuthorWarning.cs:11
+      \n  at Ink.StringParser.ParseObject (Ink.StringParser+ParseRule rule) [0x00014]
+      in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:250
+      \n  at Ink.InkParser+<>c__DisplayClass146_0.<Line>b__0 () [0x00001] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI
+      PROGETTO/Assets/Ink/InkLibs/InkCompiler/InkParser/InkParser_Statements.cs:147
+      \n  at Ink.StringParser.ParseObject (Ink.StringParser+ParseRule rule) [0x00014]
+      in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:250
+      \n  at Ink.StringParser.OneOf (Ink.StringParser+ParseRule[] array) [0x0000d]
+      in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:280
+      \n  at Ink.InkParser.StatementAtLevel (Ink.InkParser+StatementLevel level)
+      [0x0000a] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/InkParser/InkParser_Statements.cs:38
+      \n  at Ink.InkParser+<>c__DisplayClass141_0.<StatementsAtLevel>b__0 () [0x00000]
+      in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/InkParser/InkParser_Statements.cs:30
+      \n  at Ink.StringParser.ParseObject (Ink.StringParser+ParseRule rule) [0x00014]
+      in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:250
+      \n  at Ink.StringParser.Interleave[T] (Ink.StringParser+ParseRule ruleA, Ink.StringParser+ParseRule
+      ruleB, Ink.StringParser+ParseRule untilTerminator, System.Boolean flatten)
+      [0x00063] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:393
+      \n  at Ink.InkParser.StatementsAtLevel (Ink.InkParser+StatementLevel level)
+      [0x0004e] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/InkParser/InkParser_Statements.cs:28
+      \n  at Ink.InkParser.Parse () [0x00001] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI
+      PROGETTO/Assets/Ink/InkLibs/InkCompiler/InkParser/InkParser.cs:46 \n  at Ink.Compiler.Parse
+      () [0x00034] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI PROGETTO/Assets/Ink/InkLibs/InkCompiler/Compiler.cs:35
+      \n  at Ink.Compiler.Compile () [0x00001] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI
+      PROGETTO/Assets/Ink/InkLibs/InkCompiler/Compiler.cs:41 \n  at Ink.UnityIntegration.InkCompiler.CompileInkThreaded
+      (System.Object itemObj) [0x00094] in /Users/giacomoportoghese/Desktop/UNITY/IVANETTI/IVANETTI
+      PROGETTO/Assets/Ink/Editor/Core/Compiler/InkCompiler.cs:419 \n--------\n"
+    errors: []
+    warnings: []
+    todos: []
+    parents: []
+    masterInkAssets: []
+    masterInkAsset: {fileID: 0}
+    includePaths: []
+    includes: []
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 4fd736a0dc47b446caa3973ce06bf90f, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 52b63de0feb394af4b22440cb90a4964, type: 3}
+    unhandledCompileErrors: []
+    errors: []
+    warnings: []
+    todos: []
+    parents: []
+    masterInkAssets: []
+    masterInkAsset: {fileID: 0}
+    includePaths: []
+    includes: []
